@@ -10,10 +10,7 @@
 .navi_container {
     display: flex;
     padding-left: 76px;
-}
-
-.navi_container_item {
-    padding: 40px;
+    gap: 40px;
 }
 
 

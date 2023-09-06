@@ -83,14 +83,21 @@ body {
 }
 
 .is_active {
-    color: #2E2F42;
+    text-decoration: none;
     letter-spacing: 0.01em;
+    position: relative;
+    display: flex;
+    color: #404BBF;
 }
 
-.is_active:hover {
-    color: #404BBF;
-    text-decoration: underline;
-
+.is_active::after {
+    background: #404BBF;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    border-radius: 2px;
 }
 
 .navigation_link {
@@ -109,7 +116,7 @@ body {
 
 .adress {
     font-style: normal;
-    padding-left: 190px;
+    padding-left: 370px;
 }
 
 .contact-links {
@@ -337,38 +344,38 @@ body {
 }
 
 .box {
-    width: 360px;
-    height: 300px;
+    position: relative;
     overflow: hidden;
 }
 
 .overlay {
     position: absolute;
-    top: 315px;
-    width: 360px;
-    height: 300px;
-    background-color: #3f51b5;
-    transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100 100 255);
+    translate: 0 100% 0;
+    transition: translate 500ms;
 }
 
-.box:hover .overlay {
-    transform: translatey(0);
+li:hover .overlay {
+    translate: 0;
 }
 
 .overlay_text {
-position: absolute;
-width: 296px;
-height: 96px;
-left: 32px;
-top: 40px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.02em;
-color: #F4F4FD;
+    position: absolute;
+    width: 296px;
+    height: 96px;
+    left: 32px;
+    top: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
 }
 
 .social_media_text {
