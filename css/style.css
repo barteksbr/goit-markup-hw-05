@@ -180,6 +180,7 @@ body {
 .modal_div {
     width: 1470px;
     height: 638px;
+    top:0px;
     background-color: #2E2F4266;
 }
 
