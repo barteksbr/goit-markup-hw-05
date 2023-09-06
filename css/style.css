@@ -166,6 +166,23 @@ body {
     opacity: 0;
 }
 
+.x_button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+.modal_div {
+    width: 1470px;
+    height: 638px;
+    background-color: #2E2F4266;
+}
+
 .target_list {
     list-style: none;
     display: flex;
